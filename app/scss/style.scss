@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .header {
     background-image: url(../img/head-background.png);
     min-height: 750px;
@@ -5,7 +8,49 @@
     background-size: cover;
 
     .container{
-        max-width: 1170px;
-        
+        max-width: 1366px;
+        padding: 0px, 98px;
+        position: relative;
+
+        .logo_container{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 98px;
+            text-align: center;
+
+            .logo_title{
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #111111;
+            }
+
+            .logo_text{
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 4px;
+                letter-spacing: 2px;
+                color: #111111;
+            }
+        }
+
+        .menu{
+            float: right;
+            margin-top: 30px;
+
+            li{
+                display: inline-block;
+            }
+
+            li+li{
+                padding-left: 40px;
+            }
+
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
     }
 }

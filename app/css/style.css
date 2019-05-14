@@ -1,0 +1,40 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.header {
+  background-image: url(../img/head-background.png);
+  min-height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .container {
+    max-width: 1366px;
+    padding: 0px, 98px;
+    position: relative; }
+    .header .container .logo_container {
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 98px;
+      text-align: center; }
+      .header .container .logo_container .logo_title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #111111; }
+      .header .container .logo_container .logo_text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 4px;
+        letter-spacing: 2px;
+        color: #111111; }
+    .header .container .menu {
+      float: right;
+      margin-top: 30px; }
+      .header .container .menu li {
+        display: inline-block; }
+      .header .container .menu li + li {
+        padding-left: 40px; }
+      .header .container .menu a {
+        text-transform: uppercase;
+        text-decoration: none; }
