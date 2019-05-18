@@ -202,14 +202,24 @@ a {
     transform: translateX(-50%);
     top: 120px; }
   .services .row {
-    display: block; }
-    .services .row:after {
-      content: "";
-      clear: both; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .services .row .col-3 {
-      width: 33.333%;
-      float: left;
-      text-align: center; }
+      width: 33.3%;
+      min-height: 200px;
+      display: flexbox;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
       .services .row .col-3 .col-title {
         font-family: "Asap", sans-serif;
         font-size: 24px;
@@ -217,7 +227,13 @@ a {
         font-weight: 500;
         color: #4d4d4d;
         text-align: center;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        margin-bottom: 30px; }
 
 .skills {
   min-height: 767px;
@@ -285,13 +301,13 @@ a {
       top: 120px; }
     .portfolio .container .row {
       display: block; }
-      .portfolio .container .row:after {
+      .portfolio .container .row::after {
         content: "";
         clear: both; }
-      .portfolio .container .row .col-3 {
-        width: 33.333%;
-        float: left;
-        margin-bottom: 30px; }
+    .portfolio .container .col-3 {
+      width: 33.333%;
+      float: left;
+      margin-bottom: 30px; }
     .portfolio .container .more {
       color: #4d4d4d;
       font-family: "Asap", sans-serif;
@@ -311,3 +327,134 @@ a {
       position: absolute;
       top: 960px;
       right: 43%; }
+
+.testimonials {
+  min-height: 1128px; }
+  .testimonials .testimonials_title {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    line-height: 49px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 141px;
+    margin-bottom: 70px;
+    position: relative; }
+  .testimonials .testimonials_title::before {
+    content: "";
+    width: 60px;
+    border-bottom: 4px solid #4d4d4d;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 120px; }
+  .testimonials .slider_content-item {
+    max-width: 955px;
+    min-height: 349px;
+    border: 1px solid #4d4d4d;
+    margin: 0 auto;
+    position: relative; }
+    .testimonials .slider_content-item .slider-img {
+      position: absolute;
+      top: 82px;
+      left: 121px; }
+    .testimonials .slider_content-item .slider_content-item_text {
+      max-width: 580px;
+      position: absolute;
+      top: 82px;
+      right: 71px; }
+      .testimonials .slider_content-item .slider_content-item_text .name {
+        font-family: "Asap", sans-serif;
+        color: #4d4d4d;
+        font-size: 30px;
+        font-weight: 500; }
+      .testimonials .slider_content-item .slider_content-item_text .position {
+        font-family: "Asap", sans-serif;
+        color: #4d4d4d;
+        font-size: 12px;
+        line-height: 29px;
+        font-style: italic; }
+      .testimonials .slider_content-item .slider_content-item_text .slider_content_text {
+        font-family: "Asap", sans-serif;
+        color: rgba(77, 77, 77, 0.541);
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+        text-transform: uppercase; }
+  .testimonials .smth {
+    background-color: #f6f6f6;
+    min-height: 302px;
+    margin-top: 102px;
+    margin-bottom: 155px; }
+    .testimonials .smth .col-4 {
+      width: 25%;
+      float: left;
+      text-align: center;
+      margin-top: 54px;
+      display: flexbox;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      .testimonials .smth .col-4 .number {
+        font-family: "Asap", sans-serif;
+        color: #4d4d4d;
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: 500; }
+      .testimonials .smth .col-4 .smth-text {
+        font-family: "Asap", sans-serif;
+        color: #4d4d4d;
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: 400;
+        text-transform: uppercase; }
+
+.hello {
+  min-height: 784px;
+  background-image: url(../img/form-background.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hello .hello-title {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    line-height: 49px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 141px;
+    margin-bottom: 70px;
+    position: relative; }
+  .hello .hello-title::before {
+    content: "";
+    width: 60px;
+    border-bottom: 4px solid #ffffff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 120px; }
+  .hello form {
+    margin: 0 auto;
+    max-width: 786px; }
+    .hello form input [type="text"] {
+      display: block;
+      width: 50%;
+      height: 58px;
+      margin-bottom: 27px;
+      outline: none;
+      text-transform: capitalize;
+      font-family: "Asap", sans-serif;
+      font-size: 16px;
+      color: #4d4d4d;
+      letter-spacing: 6px; }
