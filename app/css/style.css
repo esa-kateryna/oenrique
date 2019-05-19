@@ -202,24 +202,28 @@ a {
     transform: translateX(-50%);
     top: 120px; }
   .services .row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .services .row .col-3 {
-      width: 33.3%;
+      max-width: 200px;
       min-height: 200px;
-      display: flexbox;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-item-align: end;
-      align-self: flex-end;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      text-align: center;
+      margin-left: 85px;
+      margin-right: 85px;
+      margin-bottom: 70px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .services .row .col-3 .service-img {
+        min-height: 100px;
+        margin-bottom: 30px; }
       .services .row .col-3 .col-title {
         font-family: "Asap", sans-serif;
         font-size: 24px;
@@ -233,7 +237,8 @@ a {
         display: flex;
         -ms-flex-item-align: end;
         align-self: flex-end;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        text-align: center; }
 
 .skills {
   min-height: 767px;
@@ -390,38 +395,35 @@ a {
     min-height: 302px;
     margin-top: 102px;
     margin-bottom: 155px; }
-    .testimonials .smth .col-4 {
-      width: 25%;
-      float: left;
-      text-align: center;
-      margin-top: 54px;
-      display: flexbox;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-      .testimonials .smth .col-4 .number {
-        font-family: "Asap", sans-serif;
-        color: #4d4d4d;
-        font-size: 32px;
-        line-height: 46px;
-        font-weight: 500; }
-      .testimonials .smth .col-4 .smth-text {
-        font-family: "Asap", sans-serif;
-        color: #4d4d4d;
-        font-size: 32px;
-        line-height: 46px;
-        font-weight: 400;
-        text-transform: uppercase; }
+  .testimonials .col-4 {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 54px; }
+    .testimonials .col-4 .smth-img {
+      min-height: 100px;
+      margin-bottom: 12px; }
+    .testimonials .col-4 .number {
+      font-family: "Asap", sans-serif;
+      color: #4d4d4d;
+      font-size: 32px;
+      line-height: 46px;
+      font-weight: 500; }
+    .testimonials .col-4 .smth-text {
+      font-family: "Asap", sans-serif;
+      color: #4d4d4d;
+      font-size: 32px;
+      line-height: 46px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 60px; }
 
 .hello {
   min-height: 784px;
   background-image: url(../img/form-background.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .hello .hello-title {
     font-family: "Asap", sans-serif;
     font-size: 46px;
@@ -447,14 +449,183 @@ a {
   .hello form {
     margin: 0 auto;
     max-width: 786px; }
-    .hello form input [type="text"] {
-      display: block;
-      width: 50%;
-      height: 58px;
+    .hello form .input-name {
+      width: 370px;
+      height: 61px;
+      margin-right: 30px;
       margin-bottom: 27px;
       outline: none;
       text-transform: capitalize;
       font-family: "Asap", sans-serif;
       font-size: 16px;
       color: #4d4d4d;
-      letter-spacing: 6px; }
+      letter-spacing: 0.6px;
+      padding-left: 10px; }
+    .hello form .input-email {
+      width: 370px;
+      height: 61px;
+      margin-bottom: 27px;
+      outline: none;
+      text-transform: capitalize;
+      font-family: "Asap", sans-serif;
+      font-size: 16px;
+      color: #4d4d4d;
+      letter-spacing: 0.6px;
+      padding-left: 10px; }
+    .hello form textarea {
+      width: 774px;
+      height: 208px;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+      font-family: "Asap", sans-serif;
+      font-size: 16px;
+      line-height: 43px;
+      color: #4d4d4d;
+      letter-spacing: 0.6px;
+      padding-left: 10px;
+      outline: none;
+      resize: none; }
+  .hello .send {
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    color: #4d4d4d;
+    letter-spacing: 0.6px;
+    outline: none;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 55px;
+    padding-left: 35px;
+    padding-right: 50px;
+    border: none;
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    top: 583px;
+    margin-bottom: 57px; }
+  .hello .send:after {
+    font-family: 'icomoon';
+    content: "\f1d8";
+    color: #4d4d4d;
+    position: absolute;
+    right: 20px; }
+  .hello hr {
+    margin-top: 100px;
+    margin-bottom: 30px; }
+  .hello .facebook,
+  .hello .twitter,
+  .hello .linkedin,
+  .hello .google,
+  .hello .behance,
+  .hello .dribble {
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    float: left;
+    position: relative; }
+    .hello .facebook:hover,
+    .hello .twitter:hover,
+    .hello .linkedin:hover,
+    .hello .google:hover,
+    .hello .behance:hover,
+    .hello .dribble:hover {
+      background-color: #0985bf; }
+  .hello .facebook {
+    margin-left: 100px; }
+  .hello .facebook:before {
+    font-family: 'icomoon';
+    content: "\f09a";
+    font-size: 18px;
+    color: #4d4d4d;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .hello .twitter:before {
+    font-family: 'icomoon';
+    content: "\f099";
+    font-size: 18px;
+    color: #4d4d4d;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .hello .linkedin:before {
+    font-family: 'icomoon';
+    content: "\f0e1";
+    font-size: 18px;
+    color: #4d4d4d;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .hello .google:before {
+    font-family: 'icomoon';
+    content: "\f0d5";
+    font-size: 16px;
+    color: #4d4d4d;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .hello .behance:before {
+    font-family: 'icomoon';
+    content: "\f1b4";
+    font-size: 16px;
+    color: #4d4d4d;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .hello .dribble:before {
+    font-family: 'icomoon';
+    content: "\f17d";
+    font-size: 18px;
+    color: #4d4d4d;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .hello .rights {
+    color: #ffffff;
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
+  .hello .up {
+    width: 45px;
+    height: 41px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
+    border: none;
+    position: absolute;
+    bottom: 195px;
+    right: 50px; }
+  .hello .up::after {
+    font-family: 'icomoon';
+    content: "\f106";
+    font-size: 24px;
+    left: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
