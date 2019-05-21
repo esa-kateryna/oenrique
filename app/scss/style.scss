@@ -61,13 +61,29 @@ a{
                 }
             }
 
-            li+li{
-                padding-left: 40px;
-            }
-
             a{
                 text-transform: uppercase;
                 color: $color;
+            }
+            .menu-home{
+                position: absolute;
+                right: 500px;
+            }
+            .menu-about{
+                position: absolute;
+                right: 400px;
+            }
+            .menu-services{
+                position: absolute;
+                right: 292px;
+            }
+            .menu-portfolio{
+                position: absolute;
+                right: 159px;
+            }
+            .menu-contect{
+                position: absolute;
+                right: 40px;
             }
         }
         .main-img{
@@ -415,12 +431,17 @@ a{
         transform: translateX(-50%);
         top: 120px;
     }
+    .slider_content{
+        max-width: 955px;
+        margin: 0 auto;
+    }
     .slider_content-item{
         max-width: 955px;
         min-height: 349px;
         border: 1px solid $color;
         margin: 0 auto;
         position: relative;
+        
         .slider-img{
             position: absolute;
             top: 82px;
@@ -453,6 +474,39 @@ a{
                 font-weight: 500;
                 text-transform: uppercase;
             }
+        }
+    }
+    
+    .slider{
+        
+        .slick-dots{
+            position: absolute;
+            top: 290px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+           
+            li{
+                display: inline-block;
+                margin-left: 2px;
+                margin-right: 2px;
+                .slick-active{
+                    background-color: #111111
+                }
+                button{
+                    font-size: 0;
+                    width: 13px;
+                    height: 13px;
+                    background-color: #ffffff;
+                    padding: 0;
+                    border: 1px solid #111111;
+                    box-sizing: content-box;
+                    outline: none;
+                }
+            }
+        }
+        .slick-dots li.slick-active button{
+            background-color: #111111;
         }
     }
     .smth{
@@ -694,14 +748,15 @@ a{
         position: absolute;
         bottom: 195px;
         right: 50px;
-        
     }
 
     .up::after{
         font-family: 'icomoon';
         content: "\f106";
         font-size: 24px;
-        left: 50%;
+        position: absolute;
+        right: 50%;
         transform: translateX(50%);
+        top: 20%;        
     }
 }

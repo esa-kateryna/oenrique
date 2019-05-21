@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section class="header">
+    <section class="header" id="home">
         <div class="container">
             <div class="logo_container">
                 <img class="logo" src="img/logo.png" alt="">
@@ -24,11 +25,11 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="menu-home"><a href="#home">Home</a></li>
+                    <li class="menu-about"><a href="#about">About</a></li>
+                    <li class="menu-services"><a href="#services">Service</a></li>
+                    <li class="menu-portfolio"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-contect"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <img class="main-img" src="img/header-face.png" alt="">
@@ -41,7 +42,7 @@
             <button class="go_bottom"></button>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about_content">
                 <div class="about_title">
@@ -60,7 +61,7 @@
             <img class="about_img" src="img/about.png" alt="">
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="title">
                 Services
@@ -125,14 +126,14 @@
             <img class="skills-img" src="img/skill board.png" alt="">
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="portfolio_title">
                 Portfolio
             </div>
             <div class="row">
                 <div class="col-3">
-                    <img class="portfolio-img animated fadeInDown delay-2s" src="img/portfolio.png" alt="">
+                    <img class="portfolio-img animated fadeInDown delay-2s scrollTop" src="img/portfolio.png" alt="">
                 </div>
                 <div class="col-3">
                     <img class="portfolio-img animated fadeInDown delay-2s" src="img/portfolio.png" alt="">
@@ -257,7 +258,7 @@
             </div>
         </div>
     </section>
-    <section class="hello">
+    <section class="hello" id="contact">
         <div class="container">
             <div class="hello-title">
                 say hello!
@@ -271,17 +272,21 @@
             </form>
             <button class="send">Send</button>
             <hr>
-            <div class="facebook"></div>
-            <div class="twitter"></div>
-            <div class="linkedin"></div>
-            <div class="google"></div>
-            <div class="behance"></div>
-            <div class="dribble"></div>
+            <div class="facebook"><a href="#"></a></div>
+            <div class="twitter"><a href="#"></a></div>
+            <div class="linkedin"><a href="#"></a></div>
+            <div class="google"><a href="#"></a></div>
+            <div class="behance"><a href="#"></a></div>
+            <div class="dribble"><a href="#"></a></div>
             <div class="rights">2017. All Rights Reserved</div>
-            <button class="up"></button>
+            <div>
+                <a class="up" href="#home"></a>
+
+            </div>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
