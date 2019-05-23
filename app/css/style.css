@@ -33,6 +33,11 @@ a {
         font-size: 4px;
         letter-spacing: 2px;
         color: #111111; }
+    .header .container .btn-menu {
+      display: none;
+      font-size: 20px;
+      position: absolute;
+      top: 35px; }
     .header .container .menu {
       float: right; }
       .header .container .menu li {
@@ -59,7 +64,7 @@ a {
       .header .container .menu .menu-portfolio {
         position: absolute;
         right: 159px; }
-      .header .container .menu .menu-contect {
+      .header .container .menu .menu-contact {
         position: absolute;
         right: 40px; }
     .header .container .main-img {
@@ -192,6 +197,12 @@ a {
 .services {
   min-height: 693px;
   background-color: #f6f6f6; }
+  .services .container {
+    max-width: 1366px;
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    margin: 0 auto; }
   .services .title {
     font-family: "Asap", sans-serif;
     font-size: 46px;
@@ -201,7 +212,7 @@ a {
     color: #4d4d4d;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 141px;
+    padding-top: 85px;
     margin-bottom: 70px;
     position: relative; }
   .services .title::before {
@@ -213,12 +224,10 @@ a {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: 120px; }
+    top: 70px; }
   .services .row {
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -325,7 +334,12 @@ a {
     .portfolio .container .col-3 {
       width: 33.333%;
       float: left;
+      padding-left: 6px;
+      padding-right: 6px;
       margin-bottom: 30px; }
+      .portfolio .container .col-3 .portfolio-img {
+        max-width: 100%;
+        width: 100%; }
     .portfolio .container .more {
       color: #4d4d4d;
       font-family: "Asap", sans-serif;
@@ -343,7 +357,7 @@ a {
       -webkit-box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
       box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
       position: absolute;
-      top: 960px;
+      top: 970px;
       right: 43%; }
 
 .testimonials {

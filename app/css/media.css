@@ -1,0 +1,442 @@
+@media (max-width: 1255px){
+    .about_img{
+        display: none;
+    }
+    .portfolio {
+        min-height: 1040px;
+    }
+    
+    .portfolio .container .more {
+        top: 895px;
+    }
+    .testimonials .slider_content-item{
+        border: none;
+    }
+    .testimonials .smth {
+        min-height: 630px;
+    }
+    .testimonials .col-4 {
+        width: 50%;
+    }
+    .hello .up {
+        bottom: 110px;
+    }
+}
+@media (max-width: 1020px){
+    .services .row .col-3{
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    .skills {
+        min-height: 650px;
+    }
+    .skills .skills-img{
+        max-width: 700px;
+    }
+    .hello {
+        min-height: 875px;
+    }
+    .hello form {
+        max-width: 600px;
+    }
+    .hello .send{
+        top: 665px;
+        left: 140px;
+    }
+    .hello .up{
+        bottom: 170px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .main-img{
+        display: none;
+    }
+    .portfolio {
+        min-height: 900px;
+    }
+    
+    .portfolio .container .more {
+        top: 770px;
+    }
+}
+
+@media (max-width: 970px){
+    .header .container .btn-menu{
+        display: block;
+    }
+    .menu ul li{
+        display: none;
+        z-index: 15;
+        width: 200px;
+        text-align: center;
+        background-color: #f6f6f6;
+        border-top: 1px solid #4d4d4d;
+        border-bottom: 1px solid #4d4d4d;
+    }
+    
+    .header .container .menu .menu-home{
+        position: absolute;
+        top: 55px;
+        right: 50px;
+    }
+    .header .container .menu .menu-about{
+        position: absolute;
+        top: 110px;
+        right: 50px;
+    } 
+    .header .container .menu .menu-services{
+        position: absolute;
+        top: 165px;
+        right: 50px;
+    }
+    .header .container .menu .menu-portfolio{
+        position: absolute;
+        top: 215px;
+        right: 50px;
+    }
+    .header .container .menu .menu-contact{
+        position: absolute;
+        top: 265px;
+        right: 50px;
+    }
+    
+    .testimonials .slider_content-item .slider_content-item_text {
+        max-width: 461px;
+    }
+    .testimonials .slider_content-item .slider-img {
+        left: 150px;
+    }
+}
+
+@media (max-width: 860px){
+    .portfolio {
+        min-height: 820px;
+    }
+    .portfolio .container .more {
+        top: 700px;
+        right: 100px;
+    }
+    .testimonials .slider_content-item .slider-img {
+        left: 100px;
+    }
+    .testimonials .slider_content-item .slider_content-item_text {
+        right: 50px;
+    }
+    .hello{
+        min-height: 820px;
+    }
+    .hello form{
+        margin-left: 20px;
+    }
+    .hello form .input-name,
+    .hello form .input-email{
+        max-width: 300px;
+    }
+    .hello form textarea {
+        max-width: 635px;
+    }
+    .hello .rights{
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .testimonials .testimonials_title{
+        margin-bottom: 50px;
+    }
+    .testimonials .slider_content-item .slider-img {
+        left: 50px;
+    }
+    .testimonials .slider_content-item .slider_content-item_text {
+        right: 20px;
+    }
+}
+
+
+
+@media (max-width: 750px){
+    .skills {
+        min-height: 450px;
+    }
+    .skills .skills_title {
+        font-size: 41px;
+        padding-top: 87px;
+        margin-bottom: 30px;
+    }
+    .skills .skills_title::before {
+        top: 77px;
+    }
+    .skills .skills-img{
+        max-width: 550px;
+    }
+}
+
+
+@media (max-width: 730px){
+    .header .container .header_content .header_content_title{
+        line-height: 88px;
+    }
+    .about .container .about_content{
+        padding-top: 90px;
+    }
+    .portfolio {
+        min-height: 1110px;
+    }
+    .portfolio .container .more {
+        top: 1000px;
+    }
+    .portfolio .container .col-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .testimonials .slider_content-item .slider-img {
+        display: none;
+    }
+    .testimonials .slider_content-item .slider_content-item_text {
+        width: 100%;
+        left: 35px;
+    }
+}
+
+@media (max-width: 670px){
+    .hello form textarea {
+        max-width: 520px;
+    }
+    
+}
+
+@media (max-width: 650px){
+    .portfolio {
+        min-height: 2750px;
+    }
+    .portfolio .container .more {
+        top: 2650px;
+    }
+    .portfolio .container .col-3 {
+        width: 100%;
+    }
+    .hello {
+        min-height: 910px;
+    }
+    .hello form textarea {
+        max-width: 635px;
+    }
+    .hello .send{
+        top: 675px;
+    }
+    .hello .up {
+        bottom: 65px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .portfolio .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .portfolio {
+        min-height: 3300px;
+    }
+    .portfolio .container .more {
+        top: 3200px;
+        right: 30px;
+    }
+    .testimonials .container{
+        padding-left: 0;
+    }
+    .testimonials .col-4 {
+        width: 100%;
+    }
+    .testimonials .smth {
+        min-height: 1260px;
+    }
+}
+
+@media (max-width: 570px){
+    .skills .container{
+        padding-left: 0;
+    }
+    .skills .skills-img{
+        max-width: 350px;
+    }
+    .portfolio {
+        min-height: 3180px;
+    }
+    .portfolio .container .more {
+        top: 3080px;
+    }
+    .testimonials .slider_content-item .slider_content-item_text{
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 550px){
+    .container{
+        padding-left: 50px;
+    }
+    .header .container .header_content .header_content_title{
+        font-size: 60px;
+        line-height: 69px;
+    }
+    .header .container .header_content .header_content_text{
+        line-height: 52px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .header .container .header_content .btn-know {
+        margin-bottom: 30px;
+    }
+    .header .container .header_content .btn-hire{
+        line-height: 67px;
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+    .header .container .go_bottom{
+        top: 660px;
+    }
+
+    .about .container .about_content{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .about .container .about_content .about_title{
+        margin-bottom: 25px;
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .cv{
+    line-height: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    }
+    .portfolio {
+        min-height: 3100px;
+    }
+    .portfolio .container .more {
+        top: 3000px;
+    }
+    .testimonials .testimonials_title{
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 520px){
+    .portfolio {
+        min-height: 2950px;
+    }
+    .portfolio .container .more {
+        top: 2850px;
+    }
+}
+@media (max-width: 500px){
+    .portfolio {
+        min-height: 2800px;
+    }
+    .portfolio .container .portfolio_title{
+        font-size: 41px;
+    }
+    .portfolio .container .more {
+        top: 2700px;
+    }
+}
+@media (max-width: 460px){
+    .portfolio {
+        min-height: 2600px;
+    }
+    .portfolio .container .more {
+        top: 2500px;
+    }
+}
+
+@media (max-width: 435px){
+    .header .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header .container .go_bottom {
+        top: 680px;
+    }
+    
+    .testimonials .slider_content-item .slider_content-item_text{
+        max-width: 250px;
+    }
+    .testimonials .slider .slick-dots {
+        top: 355px;
+}
+@media (max-width: 420px){
+    .portfolio {
+        min-height: 2400px;
+    }
+    .portfolio .container .more {
+        top: 2300px;
+    }
+}
+@media (max-width: 400px){
+    .portfolio {
+        min-height: 2300px;
+    }
+    .portfolio .container .more {
+        top: 2200px;
+    }
+}
+
+@media (max-width: 380px){
+    .about .container .about_content .about_title{
+        font-size: 32px;
+    }
+    .skills {
+        min-height: 300px;
+    }
+    .skills .skills_title {
+        font-size: 30px;
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+    .skills .skills_title::before {
+        top: 55px;
+    }
+    .skills .skills-img{
+        max-width: 300px;
+    }
+    .portfolio {
+        min-height: 2200px;
+    }
+    .portfolio .container .portfolio_title{
+        font-size: 30px;
+    }
+    .portfolio .container .more {
+        top: 2100px;
+    }
+}
+
+
+@media (max-width: 345px){
+    .header .container .header_content {
+        top: 190px;
+    }
+
+    .header .container .header_content .header_content_title{
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .header .container .header_content .header_content_text {
+        font-size: 14px;
+    }
+    .about .container .about_content .cv{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .portfolio {
+        min-height: 2000px;
+    }
+    .portfolio .container .more {
+        top: 1900px;
+    }
+}
