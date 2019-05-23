@@ -280,9 +280,10 @@ a{
     .row{
         max-width: 1200px;
         margin: 0 auto;
-        
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+        flex-shrink: 1;
         
         .col-3{
             max-width: 200px;

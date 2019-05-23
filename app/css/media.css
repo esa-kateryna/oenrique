@@ -5,7 +5,6 @@
     .portfolio {
         min-height: 1040px;
     }
-    
     .portfolio .container .more {
         top: 895px;
     }
@@ -23,10 +22,6 @@
     }
 }
 @media (max-width: 1020px){
-    .services .row .col-3{
-        margin-left: 75px;
-        margin-right: 75px;
-    }
     .skills {
         min-height: 650px;
     }
@@ -38,6 +33,9 @@
     }
     .hello form {
         max-width: 600px;
+    }
+    .hello form textarea {
+        width: 550px;
     }
     .hello .send{
         top: 665px;
@@ -109,7 +107,17 @@
         left: 150px;
     }
 }
-
+@media (max-width: 900px){
+    .hello {
+        min-height: 910px;
+    }
+    .hello form{
+        margin-left: 40px;
+    }
+    .hello .facebook {
+        margin-left: 40px;
+    }
+}
 @media (max-width: 860px){
     .portfolio {
         min-height: 820px;
@@ -123,19 +131,6 @@
     }
     .testimonials .slider_content-item .slider_content-item_text {
         right: 50px;
-    }
-    .hello{
-        min-height: 820px;
-    }
-    .hello form{
-        margin-left: 20px;
-    }
-    .hello form .input-name,
-    .hello form .input-email{
-        max-width: 300px;
-    }
-    .hello form textarea {
-        max-width: 635px;
     }
     .hello .rights{
         bottom: 20px;
@@ -154,8 +149,6 @@
     }
 }
 
-
-
 @media (max-width: 750px){
     .skills {
         min-height: 450px;
@@ -172,7 +165,6 @@
         max-width: 550px;
     }
 }
-
 
 @media (max-width: 730px){
     .header .container .header_content .header_content_title{
@@ -205,8 +197,7 @@
 @media (max-width: 670px){
     .hello form textarea {
         max-width: 520px;
-    }
-    
+    }  
 }
 
 @media (max-width: 650px){
@@ -233,7 +224,6 @@
     }
 }
 
-
 @media (max-width: 600px){
     .portfolio .container {
         padding-left: 25px;
@@ -254,6 +244,9 @@
     }
     .testimonials .smth {
         min-height: 1260px;
+    }
+    .hello form textarea {
+        width: 460px;
     }
 }
 
@@ -324,6 +317,12 @@
         font-size: 35px;
         margin-bottom: 0;
     }
+    .hello form {
+        margin-left: -15px;
+    }
+    .hello .facebook {
+        margin-left: -15px;
+    }
 }
 @media (max-width: 520px){
     .portfolio {
@@ -343,6 +342,15 @@
     .portfolio .container .more {
         top: 2700px;
     }
+    .hello form .input-name{
+        margin-right: 0px;
+    }
+    .hello form textarea {
+        width: 370px;
+    }
+    .hello .send {
+        left: -30px;
+    }
 }
 @media (max-width: 460px){
     .portfolio {
@@ -358,16 +366,23 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
     .header .container .go_bottom {
         top: 680px;
     }
-    
     .testimonials .slider_content-item .slider_content-item_text{
         max-width: 250px;
     }
     .testimonials .slider .slick-dots {
         top: 355px;
+    }
+    .hello form .input-name,
+    .hello form .input-email,
+    .hello form textarea {
+        width: 290px;
+    }
+    .hello .up {
+        bottom: 145px;
+    }
 }
 @media (max-width: 420px){
     .portfolio {
@@ -420,12 +435,10 @@
     .header .container .header_content {
         top: 190px;
     }
-
     .header .container .header_content .header_content_title{
         font-size: 55px;
         line-height: 65px;
     }
-
     .header .container .header_content .header_content_text {
         font-size: 14px;
     }
@@ -438,5 +451,11 @@
     }
     .portfolio .container .more {
         top: 1900px;
+    }
+    .hello form {
+        margin-left: -30px;
+    }
+    .hello .rights {
+        font-size: 14px;
     }
 }
